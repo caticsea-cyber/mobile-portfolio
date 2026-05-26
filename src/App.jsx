@@ -7,7 +7,7 @@ const categories = [
   { id: 'certs', title: '자격증', icon: Award, desc: 'Certifications' },
   { id: 'canva', title: '캔바 디자인', icon: PenTool, desc: 'Canva Designs' },
   { id: 'tableau', title: '태블로 데이터 분석', icon: BarChart2, desc: 'Tableau Data Analysis' },
-  { id: 'work', title: '업무 성과', icon: Briefcase, desc: 'Work Experience' },
+  { id: 'work', title: 'for Fun', icon: Briefcase, desc: 'Work Experience' },
 ];
 
 const mockItems = {
