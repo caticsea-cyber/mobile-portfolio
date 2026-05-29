@@ -114,24 +114,29 @@ function App() {
       <main className="fade-enter" style={{ marginTop: '20px' }}>
         {!activeCategory ? (
           // Main Screen
-          <div className="category-grid">
-            {categories.map((cat, idx) => {
-              const Icon = cat.icon;
-              return (
-                <div 
-                  key={cat.id} 
-                  className="category-card" 
-                  onClick={() => handleCategoryClick(cat)}
-                  style={{ animationDelay: `${idx * 0.1}s` }}
-                >
-                  <div className="category-icon">
-                    <Icon size={24} />
+          <>
+            <div className="category-grid">
+              {categories.map((cat, idx) => {
+                const Icon = cat.icon;
+                return (
+                  <div 
+                    key={cat.id} 
+                    className="category-card" 
+                    onClick={() => handleCategoryClick(cat)}
+                    style={{ animationDelay: `${idx * 0.1}s` }}
+                  >
+                    <div className="category-icon">
+                      <Icon size={24} />
+                    </div>
+                    <h3 className="category-title">{cat.title}</h3>
                   </div>
-                  <h3 className="category-title">{cat.title}</h3>
-                </div>
-              )
-            })}
-          </div>
+                )
+              })}
+            </div>
+            <div style={{ marginTop: '30px', textAlign: 'center', padding: '0 20px' }}>
+              <img src="/portfolio-logo.png" alt="Portfolio Logo" style={{ maxWidth: '100%', height: 'auto', borderRadius: '8px' }} />
+            </div>
+          </>
         ) : (
           // Gallery View
           <div className="gallery-list">
