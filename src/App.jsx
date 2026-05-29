@@ -4,16 +4,17 @@ import './index.css';
 
 // Mock Data
 const categories = [
-  { id: 'certs', title: '자격증', icon: Award, desc: 'Certifications' },
-  { id: 'canva', title: '캔바 디자인', icon: PenTool, desc: 'Canva Designs' },
-  { id: 'tableau', title: '태블로 데이터 분석', icon: BarChart2, desc: 'Tableau Data Analysis' },
+  { id: 'certs', title: 'Certifications', icon: Award, desc: 'Certifications' },
+  { id: 'canva', title: 'Infographic with Canva', icon: PenTool, desc: 'Canva Designs' },
+  { id: 'tableau', title: 'Data Analysis', icon: BarChart2, desc: 'Tableau Data Analysis' },
   { id: 'work', title: 'for Fun', icon: Briefcase, desc: 'Work Experience' },
 ];
 
 const mockItems = {
   certs: [
-    { id: 'c1', title: 'ADsP 데이터분석 준전문가', desc: '한국데이터산업진흥원 주관 데이터 분석 전문가 자격증 취득.', image: 'https://images.unsplash.com/photo-1546410531-bea5aadcb6ce?auto=format&fit=crop&w=400&q=80', tags: ['Data', 'Certification'] },
-    { id: 'c2', title: '정보처리기사', desc: '소프트웨어 개발 및 IT 프로젝트 관리를 위한 국가 공인 자격증.', image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80', tags: ['IT', 'Certificate'] }
+    { id: 'c1', title: '경영정보시각화능력(Tableau)', desc: '태블로(Tableau)를 활용한 비즈니스 데이터 시각화 및 인사이트 도출 역량 인증.', image: 'https://images.unsplash.com/photo-1546410531-bea5aadcb6ce?auto=format&fit=crop&w=400&q=80', tags: ['Tableau', 'BI'] },
+    { id: 'c2', title: '빅데이터분석기사(Python)', desc: '파이썬(Python) 기반의 데이터 수집, 전처리, 모델링 및 분석을 아우르는 국가 공인 자격증.', image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80', tags: ['Python', 'Big Data'] },
+    { id: 'c3', title: 'AI-POT(AI 프롬프트 활용능력)', desc: '생성형 AI를 실무에 효과적으로 적용하기 위한 프롬프트 엔지니어링 및 활용 자격증.', image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=400&q=80', tags: ['AI', 'Prompt'] }
   ],
   canva: [
     { id: 'cv1', title: '브랜드 리뉴얼 캠페인', desc: '소셜 미디어 홍보를 위한 브랜드 리뉴얼 포스터 및 배너 디자인.', image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=400&q=80', tags: ['Design', 'Social Media'] },
