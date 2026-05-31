@@ -5,7 +5,7 @@ import './index.css';
 // Mock Data
 const categories = [
   { id: 'certs', title: 'Certifications', icon: Award, desc: 'Certifications' },
-  { id: 'canva', title: 'Infographic with Canva', icon: PenTool, desc: 'Canva Designs' },
+  { id: 'canva', title: 'Infographics with Canva', icon: PenTool, desc: 'Canva Designs' },
   { id: 'tableau', title: 'Data Analysis', icon: BarChart2, desc: 'Tableau Data Analysis' },
   { id: 'work', title: 'for Fun', icon: Briefcase, desc: 'Work Experience' },
 ];
