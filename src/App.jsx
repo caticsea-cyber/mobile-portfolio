@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Award, PenTool, BarChart2, Briefcase, ChevronLeft, X } from 'lucide-react';
 import './index.css';
 
+
 // Mock Data
 const categories = [
   { id: 'certs', title: 'Certifications', icon: Award, desc: 'Certifications' },
@@ -120,18 +121,20 @@ function App() {
               {categories.map((cat, idx) => {
                 const Icon = cat.icon;
                 return (
-                  <div 
-                    key={cat.id} 
-                    className="category-card" 
+                  <div
+                    key={cat.id}
+                    className={`category-card${cat.id === 'work' ? ' work' : ''}`}
                     onClick={() => handleCategoryClick(cat)}
                     style={{ animationDelay: `${idx * 0.1}s` }}
                   >
-                    <div className="category-icon">
-                      <Icon size={24} />
-                    </div>
+                    {Icon && cat.id !== 'work' && (
+                      <div className="category-icon">
+                        <Icon size={24} />
+                      </div>
+                    )}
                     <h3 className="category-title">{cat.title}</h3>
                   </div>
-                )
+                );
               })}
             </div>
             <div style={{ marginTop: '30px', textAlign: 'center', padding: '0 20px' }}>
