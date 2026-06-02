@@ -18,11 +18,11 @@ const mockItems = {
     { id: 'c3', title: 'AI-POT(AI 프롬프트 활용능력)', desc: '생성형 AI를 실무에 효과적으로 적용하기 위한 프롬프트 엔지니어링 및 활용 자격증.', image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=400&q=80', tags: ['AI', 'Prompt'] }
   ],
   canva: [
-    { id: 'cv1', title: '브랜드 리뉴얼 캠페인', desc: '소셜 미디어 홍보를 위한 브랜드 리뉴얼 포스터 및 배너 디자인.', image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=400&q=80', tags: ['Design', 'Social Media'] },
-    { id: 'cv2', title: '사내 워크샵 인포그래픽', desc: '사내 행사 요약 및 실적 공유를 위한 깔끔한 인포그래픽 제작.', image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=400&q=80', tags: ['Infographic', 'Canva'] }
+    { id: 'cv1', title: '광명시립도서관 전시실 이용현황 분석', desc: '소셜 미디어 홍보를 위한 브랜드 리뉴얼 포스터 및 배너 디자인.', image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=400&q=80', tags: ['Design', 'Social Media'] },
+    { id: 'cv2', title: '동태찌개 요리법 마인드맵', desc: '사내 행사 요약 및 실적 공유를 위한 깔끔한 인포그래픽 제작.', image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=400&q=80', tags: ['Infographic', 'Canva'] }
   ],
   tableau: [
-    { id: 't1', title: '분기별 매출 대시보드', desc: '지역별, 카테고리별 분기 매출 트렌드를 시각화한 인터랙티브 대시보드.', image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80', tags: ['Dashboard', 'Sales'] },
+    { id: 't1', title: '광명시 ESG 대시보드', desc: '지역별, 카테고리별 분기 매출 트렌드를 시각화한 인터랙티브 대시보드.', image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80', tags: ['Dashboard', 'Sales'] },
     { id: 't2', title: '고객 이탈율 분석', desc: '코호트 분석을 통한 고객 유지율 및 이탈 요인 시각화.', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80', tags: ['Analysis', 'Churn'] }
   ],
   work: [
@@ -36,8 +36,8 @@ function BottomSheet({ isOpen, item, onClose }) {
 
   return (
     <>
-      <div 
-        className={`bottom-sheet-overlay ${isOpen ? 'open' : ''}`} 
+      <div
+        className={`bottom-sheet-overlay ${isOpen ? 'open' : ''}`}
         onClick={onClose}
       />
       <div className={`bottom-sheet ${isOpen ? 'open' : ''}`}>
@@ -54,7 +54,7 @@ function BottomSheet({ isOpen, item, onClose }) {
           <h2 className="sheet-title">{item.title}</h2>
           <p className="sheet-desc">
             {item.desc}
-            <br/><br/>
+            <br /><br />
             이 프로젝트를 통해 얻은 인사이트와 성과를 중심으로 상세한 내용을 확인할 수 있습니다. 시각적으로 깔끔하고 모바일 환경에서 읽기 쉽도록 최적화된 콘텐츠 영역입니다.
           </p>
         </div>
@@ -145,8 +145,8 @@ function App() {
           // Gallery View
           <div className="gallery-list">
             {currentItems.map((item, idx) => (
-              <div 
-                key={item.id} 
+              <div
+                key={item.id}
                 className="gallery-item fade-enter"
                 style={{ animationDelay: `${idx * 0.1}s` }}
                 onClick={() => handleItemClick(item)}
@@ -163,10 +163,10 @@ function App() {
       </main>
 
       {/* Detail Bottom Sheet */}
-      <BottomSheet 
-        isOpen={isSheetOpen} 
-        item={activeItem} 
-        onClose={handleCloseSheet} 
+      <BottomSheet
+        isOpen={isSheetOpen}
+        item={activeItem}
+        onClose={handleCloseSheet}
       />
     </div>
   );
