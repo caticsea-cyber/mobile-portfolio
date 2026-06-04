@@ -108,7 +108,7 @@ function App() {
           </button>
         )}
         <h1 className="app-title">
-          {activeCategory ? activeCategory.title : 'Portfolio'}
+          {activeCategory ? activeCategory.title : 'My day is .today'}
         </h1>
       </header>
 
@@ -127,11 +127,12 @@ function App() {
                     onClick={() => handleCategoryClick(cat)}
                     style={{ animationDelay: `${idx * 0.1}s` }}
                   >
-                    {Icon && cat.id !== 'work' && (
+                    {/*PHS: 아이콘 안보이게 주석처리 */}
+                    {/*Icon && cat.id !== 'work' && (
                       <div className="category-icon">
                         <Icon size={24} />
                       </div>
-                    )}
+                    )*/}
                     <h3 className="category-title">{cat.title}</h3>
                   </div>
                 );

@@ -135,12 +135,13 @@ p {
 }
 
 /* for Fun 카테고리 배경 이미지 */
+/* PHS: padding-bottom: 45% 수정 */
 .category-card.work {
   background-image: url(/icon-for-fun-212.jpeg);
   background-size: cover;
   background-position: center;
   justify-content: flex-end;
-  padding-bottom: 60px;
+  padding-bottom: 45%;
 }
 
 .category-card:active {
