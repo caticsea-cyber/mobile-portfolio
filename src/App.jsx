@@ -26,7 +26,7 @@ const mockItems = {
     { id: 't2', title: '광명시 권역별 주거·자산·대출 분석', desc: 'GIS 기반의 광명시 권역별 아파트 시세·소유주 자산/소득/대출(전세금 포함) 연관성 분석.', image: './public/3-2.png', tags: ['GIS', 'Analysis'] }
   ],
   work: [
-    { id: 'w1', title: 'YouTube Long Form: 나는, 루비!', desc: 'Adobe Premiere Pro 활용. 원본 동영상, 이미지는 동생이 제공.', image: 'https://img.youtube.com/vi/dbiK49gFEHM/hqdefault.jpg', youtubeId: 'dbiK49gFEHM', tags: ['mp4', 'Premiere'] },
+    { id: 'w1', title: 'YouTube Long Form: 나는, 루비!', desc: 'Adobe Premiere Pro 활용. 원본 동영상, 이미지는 동생이 제공.', image: 'https://img.youtube.com/vi/dbiK49gFEHM/hqdefault.jpg', youtubeId: 'dbiK49gFEHM', tags: ['Long Form', 'Premiere'] },
     { id: 'w2', title: 'YouTube Short Form: 기차는 8시에 떠나네', desc: 'Google Storybook, Gemini, ChatGPT, vStory, YTCreate 활용.', image: 'https://img.youtube.com/vi/qIDVGYM35P4/hqdefault.jpg', youtubeId: 'qIDVGYM35P4', tags: ['Shorts', 'YouTube'] },
     { id: 'w3', title: '3D Modeling&Printing: 불의 정령 살라만다', desc: '생성형 AI, Bamboo Studio, Autodesk Fusion 활용. Bamboo Lab 출력.', image: './public/4-3.jpg', tags: ['3D Modeling', '3D Printing'] }
   ]
@@ -68,7 +68,7 @@ function BottomSheet({ isOpen, item, onClose }) {
           <h2 className="sheet-title">{item.title}</h2>
           <p className="sheet-desc">
             {item.desc}
-            <br /><br />
+            <br /><br /><br /><br />
             {/* PHS 주석처리 : 이 프로젝트를 통해 얻은 인사이트와 성과를 중심으로 상세한 내용을 확인할 수 있습니다. 시각적으로 깔끔하고 모바일 환경에서 읽기 쉽도록 최적화된 콘텐츠 영역입니다.*/}
           </p>
         </div>
