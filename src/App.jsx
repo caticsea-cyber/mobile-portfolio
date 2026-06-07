@@ -14,21 +14,21 @@ const categories = [
 const mockItems = {
   certs: [
     { id: 'c1', title: '경영정보시각화능력(Tableau)', desc: '태블로(Tableau)를 활용한 비즈니스 데이터 시각화 및 인사이트 도출 역량 인증.', image: '/1-1.png', tags: ['Tableau', 'BI'] },
-    { id: 'c2', title: '빅데이터분석기사(Python)', desc: '파이썬(Python) 기반의 데이터 수집, 전처리, 모델링 및 분석을 아우르는 국가 공인 자격증.', image: './public/1-2.png', tags: ['Python', 'Big Data'] },
-    { id: 'c3', title: 'AI-POT(AI 프롬프트 활용능력)', desc: '생성형 AI를 실무에 효과적으로 적용하기 위한 프롬프트 엔지니어링 및 활용 자격증.', image: './public/1-3.png', tags: ['AI', 'Prompt'] }
+    { id: 'c2', title: '빅데이터분석기사(Python)', desc: '파이썬(Python) 기반의 데이터 수집, 전처리, 모델링 및 분석을 아우르는 국가 공인 자격증.', image: './1-2.png', tags: ['Python', 'Big Data'] },
+    { id: 'c3', title: 'AI-POT(AI 프롬프트 활용능력)', desc: '생성형 AI를 실무에 효과적으로 적용하기 위한 프롬프트 엔지니어링 및 활용 자격증.', image: './1-3.png', tags: ['AI', 'Prompt'] }
   ],
   canva: [
-    { id: 'cv1', title: '광명시립도서관 전시실 이용현황 분석', desc: '5개 시립도서관의 전시실 이용에 대한 테마별 관람자 현황 분석결과를 시각화.', image: './public/2-1.png', tags: ['Design', 'Infographic'] },
-    { id: 'cv2', title: '동태찌개 요리법 마인드맵', desc: '음식 조리법을 한 눈에 볼 수 있는 마인드맵 형태로 표현.', image: './public/2-2.png', tags: ['Mindmap', 'Canva'] }
+    { id: 'cv1', title: '광명시립도서관 전시실 이용현황 분석', desc: '5개 시립도서관의 전시실 이용에 대한 테마별 관람자 현황 분석결과를 시각화.', image: './2-1.png', tags: ['Design', 'Infographic'] },
+    { id: 'cv2', title: '동태찌개 요리법 마인드맵', desc: '음식 조리법을 한 눈에 볼 수 있는 마인드맵 형태로 표현.', image: './2-2.png', tags: ['Mindmap', 'Canva'] }
   ],
   tableau: [
-    { id: 't1', title: '광명시 ESG 대시보드', desc: '환경(E)·사회(S)·지배구조(G) 성과와 지표를 한눈에 확인할 수 있는 인터랙티브 대시보드.', image: './public/3-1.png', tags: ['Dashboard', 'ESG'] },
-    { id: 't2', title: '광명시 권역별 주거·자산·대출 분석', desc: 'GIS 기반의 광명시 권역별 아파트 시세·소유주 자산/소득/대출(전세금 포함) 연관성 분석.', image: './public/3-2.png', tags: ['GIS', 'Analysis'] }
+    { id: 't1', title: '광명시 ESG 대시보드', desc: '환경(E)·사회(S)·지배구조(G) 성과와 지표를 한눈에 확인할 수 있는 인터랙티브 대시보드.', image: './3-1.png', tags: ['Dashboard', 'ESG'] },
+    { id: 't2', title: '광명시 권역별 주거·자산·대출 분석', desc: 'GIS 기반의 광명시 권역별 아파트 시세·소유주 자산/소득/대출(전세금 포함) 연관성 분석.', image: './3-2.png', tags: ['GIS', 'Analysis'] }
   ],
   work: [
     { id: 'w1', title: 'YouTube Long Form: 나는, 루비!', desc: 'Adobe Premiere Pro 활용. 원본 동영상, 이미지는 동생이 제공.', image: 'https://img.youtube.com/vi/dbiK49gFEHM/hqdefault.jpg', youtubeId: 'dbiK49gFEHM', tags: ['Long Form', 'Premiere'] },
     { id: 'w2', title: 'YouTube Short Form: 기차는 8시에 떠나네', desc: 'Google Storybook, Gemini, ChatGPT, vStory, YTCreate 활용.', image: 'https://img.youtube.com/vi/qIDVGYM35P4/hqdefault.jpg', youtubeId: 'qIDVGYM35P4', tags: ['Shorts', 'YouTube'] },
-    { id: 'w3', title: '3D Modeling&Printing: 불의 정령 살라만다', desc: '생성형 AI, Bamboo Studio, Autodesk Fusion 활용. Bamboo Lab 출력.', image: './public/4-3.jpg', tags: ['3D Modeling', '3D Printing'] }
+    { id: 'w3', title: '3D Modeling&Printing: 불의 정령 살라만다', desc: '생성형 AI, Bamboo Studio, Autodesk Fusion 활용. Bamboo Lab 출력.', image: './4-3.jpg', tags: ['3D Modeling', '3D Printing'] }
   ]
 };
 
