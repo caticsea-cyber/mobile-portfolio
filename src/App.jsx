@@ -13,7 +13,7 @@ const categories = [
 
 const mockItems = {
   certs: [
-    { id: 'c1', title: '경영정보시각화능력(Tableau)', desc: '태블로(Tableau)를 활용한 비즈니스 데이터 시각화 및 인사이트 도출 역량 인증.', image: './public/1-1.png', tags: ['Tableau', 'BI'] },
+    { id: 'c1', title: '경영정보시각화능력(Tableau)', desc: '태블로(Tableau)를 활용한 비즈니스 데이터 시각화 및 인사이트 도출 역량 인증.', image: '/1-1.png', tags: ['Tableau', 'BI'] },
     { id: 'c2', title: '빅데이터분석기사(Python)', desc: '파이썬(Python) 기반의 데이터 수집, 전처리, 모델링 및 분석을 아우르는 국가 공인 자격증.', image: './public/1-2.png', tags: ['Python', 'Big Data'] },
     { id: 'c3', title: 'AI-POT(AI 프롬프트 활용능력)', desc: '생성형 AI를 실무에 효과적으로 적용하기 위한 프롬프트 엔지니어링 및 활용 자격증.', image: './public/1-3.png', tags: ['AI', 'Prompt'] }
   ],
