@@ -13,21 +13,22 @@ const categories = [
 
 const mockItems = {
   certs: [
-    { id: 'c1', title: '경영정보시각화능력(Tableau)', desc: '태블로(Tableau)를 활용한 비즈니스 데이터 시각화 및 인사이트 도출 역량 인증.', image: 'https://images.unsplash.com/photo-1546410531-bea5aadcb6ce?auto=format&fit=crop&w=400&q=80', tags: ['Tableau', 'BI'] },
-    { id: 'c2', title: '빅데이터분석기사(Python)', desc: '파이썬(Python) 기반의 데이터 수집, 전처리, 모델링 및 분석을 아우르는 국가 공인 자격증.', image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80', tags: ['Python', 'Big Data'] },
-    { id: 'c3', title: 'AI-POT(AI 프롬프트 활용능력)', desc: '생성형 AI를 실무에 효과적으로 적용하기 위한 프롬프트 엔지니어링 및 활용 자격증.', image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=400&q=80', tags: ['AI', 'Prompt'] }
+    { id: 'c1', title: '경영정보시각화능력(Tableau)', desc: '태블로(Tableau)를 활용한 비즈니스 데이터 시각화 및 인사이트 도출 역량 인증.', image: './public/1-1.png', tags: ['Tableau', 'BI'] },
+    { id: 'c2', title: '빅데이터분석기사(Python)', desc: '파이썬(Python) 기반의 데이터 수집, 전처리, 모델링 및 분석을 아우르는 국가 공인 자격증.', image: './public/1-2.png', tags: ['Python', 'Big Data'] },
+    { id: 'c3', title: 'AI-POT(AI 프롬프트 활용능력)', desc: '생성형 AI를 실무에 효과적으로 적용하기 위한 프롬프트 엔지니어링 및 활용 자격증.', image: './public/1-3.png', tags: ['AI', 'Prompt'] }
   ],
   canva: [
-    { id: 'cv1', title: '광명시립도서관 전시실 이용현황 분석', desc: '5개 시립도서관의 전시실 이용에 대한 테마별 관람자 현황 분석결과를 시각화.', image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=400&q=80', tags: ['Design', 'Infographic'] },
-    { id: 'cv2', title: '동태찌개 요리법 마인드맵', desc: '음식 조리법을 한 눈에 볼 수 있는 마인드맵 형태로 표현.', image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=400&q=80', tags: ['Mindmap', 'Canva'] }
+    { id: 'cv1', title: '광명시립도서관 전시실 이용현황 분석', desc: '5개 시립도서관의 전시실 이용에 대한 테마별 관람자 현황 분석결과를 시각화.', image: './public/2-1.png', tags: ['Design', 'Infographic'] },
+    { id: 'cv2', title: '동태찌개 요리법 마인드맵', desc: '음식 조리법을 한 눈에 볼 수 있는 마인드맵 형태로 표현.', image: './public/2-2.png', tags: ['Mindmap', 'Canva'] }
   ],
   tableau: [
-    { id: 't1', title: '광명시 ESG 대시보드', desc: '환경(E)·사회(S)·지배구조(G) 성과와 지표를 한눈에 확인할 수 있는 인터랙티브 대시보드.', image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80', tags: ['Dashboard', 'ESG'] },
-    { id: 't2', title: '광명시 권역별 주거·자산·대출 분석', desc: 'GIS 기반의 광명시 권역별 아파트 시세·소유주 자산/소득/대출(전세금 포함) 연관성 분석.', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80', tags: ['GIS', 'Analysis'] }
+    { id: 't1', title: '광명시 ESG 대시보드', desc: '환경(E)·사회(S)·지배구조(G) 성과와 지표를 한눈에 확인할 수 있는 인터랙티브 대시보드.', image: './public/3-1.png', tags: ['Dashboard', 'ESG'] },
+    { id: 't2', title: '광명시 권역별 주거·자산·대출 분석', desc: 'GIS 기반의 광명시 권역별 아파트 시세·소유주 자산/소득/대출(전세금 포함) 연관성 분석.', image: './public/3-2.png', tags: ['GIS', 'Analysis'] }
   ],
   work: [
-    { id: 'w1', title: '마케팅 자동화 파이프라인 구축', desc: '업무 효율성을 30% 향상시킨 마케팅 데이터 수집 자동화 프로젝트.', image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=400&q=80', tags: ['Automation', 'Project'] },
-    { id: 'w2', title: '신규 서비스 런칭 성공', desc: '런칭 1개월 만에 가입자 1만 명을 달성한 신규 서비스 기획 및 운영.', image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80', tags: ['Planning', 'Launch'] }
+    { id: 'w1', title: 'YouTube Long Form: 나는, 루비!', desc: 'Adobe Premiere Pro 활용. 원본 동영상, 이미지는 동생이 제공.', image: 'https://img.youtube.com/vi/dbiK49gFEHM/hqdefault.jpg', youtubeId: 'dbiK49gFEHM', tags: ['mp4', 'Premiere'] },
+    { id: 'w2', title: 'YouTube Short Form: 기차는 8시에 떠나네', desc: 'Google Storybook, Gemini, ChatGPT, vStory, YTCreate 활용.', image: 'https://img.youtube.com/vi/qIDVGYM35P4/hqdefault.jpg', youtubeId: 'qIDVGYM35P4', tags: ['Shorts', 'YouTube'] },
+    { id: 'w3', title: '3D Modeling&Printing: 불의 정령 살라만다', desc: '생성형 AI, Bamboo Studio, Autodesk Fusion 활용. Bamboo Lab 출력.', image: './public/4-3.jpg', tags: ['3D Modeling', '3D Printing'] }
   ]
 };
 
@@ -45,7 +46,20 @@ function BottomSheet({ isOpen, item, onClose }) {
           <div className="sheet-handle"></div>
         </div>
         <div className="sheet-content fade-enter">
-          <img src={item.image} alt={item.title} className="sheet-image" />
+          {item.youtubeId ? (
+            <div className="sheet-video-container" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', marginBottom: '16px' }}>
+              <iframe
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                src={`https://www.youtube.com/embed/${item.youtubeId}`}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          ) : (
+            <img src={item.image} alt={item.title} className="sheet-image" />
+          )}
           <div className="sheet-meta">
             {item.tags?.map(tag => (
               <span key={tag} className="sheet-tag">{tag}</span>
@@ -55,7 +69,7 @@ function BottomSheet({ isOpen, item, onClose }) {
           <p className="sheet-desc">
             {item.desc}
             <br /><br />
-            이 프로젝트를 통해 얻은 인사이트와 성과를 중심으로 상세한 내용을 확인할 수 있습니다. 시각적으로 깔끔하고 모바일 환경에서 읽기 쉽도록 최적화된 콘텐츠 영역입니다.
+            {/* PHS 주석처리 : 이 프로젝트를 통해 얻은 인사이트와 성과를 중심으로 상세한 내용을 확인할 수 있습니다. 시각적으로 깔끔하고 모바일 환경에서 읽기 쉽도록 최적화된 콘텐츠 영역입니다.*/}
           </p>
         </div>
       </div>
